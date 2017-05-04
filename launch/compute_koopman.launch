@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- launch node to compute koopman operator -->
+  <node name="compute_koopman" pkg="koopman_operator_model_learning" type="compute_koopman.py" output="screen" required="true">
+    <param name="data_path" value="$(find koopman_operator_model_learning)/data/" />
+  </node>
+
+</launch>
